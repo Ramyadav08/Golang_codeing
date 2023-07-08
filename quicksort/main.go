@@ -8,7 +8,7 @@ func main(){
 	fmt.Println(arr)
 }
 
-func quicksort(arr[]int , lo, hi int){
+func quicksort(arr[]int , lo, hi int)  {
 	
 	if lo>=hi {
 		return
@@ -25,9 +25,11 @@ func quicksort(arr[]int , lo, hi int){
 			e--
 		}
 		if s<=e {
-			tep:= s
-			s =e 
-			e =tep
+			tep:= arr[s]
+			arr[s] = arr[e] 
+			arr[e] = tep
+			s++
+			e--
 		}
 
 	}
@@ -35,5 +37,7 @@ func quicksort(arr[]int , lo, hi int){
 	// now my pivot is corresct position now two halves 
 	quicksort(arr,lo,e)
 	quicksort(arr,s,hi)
+	
+	
 
 }
