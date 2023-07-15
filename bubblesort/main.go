@@ -14,3 +14,5 @@ func main() {
    array:= []int{11, 14, 3, 8, 18, 17, 43};
    fmt.Println(BubbleSort(array))
 }
+
+// time complexity is n^2

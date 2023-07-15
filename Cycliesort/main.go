@@ -26,3 +26,5 @@ func swap(arr []int,i,correctIndex int){
 	arr[i]=arr[correctIndex]
 	arr[correctIndex]=temp
 }
+
+// time complexity n^2

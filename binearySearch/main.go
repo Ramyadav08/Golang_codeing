@@ -1,5 +1,6 @@
 package main
 
+// time complexity is O(log n)
 import "fmt"
 func main(){
 	items:=[]int{2,3,4,5,6,7,8,9,11,12,13,14}
